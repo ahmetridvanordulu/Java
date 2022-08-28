@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class h {
+    public static void main(String[] args) {
+        Scanner al = new Scanner(System.in);
+        int sayi,kere,total = 1;
+
+        System.out.println("Sayiyi giriniz ");
+        sayi = al.nextInt();
+
+        System.out.println("Üssünü giriniz ");
+        kere = al.nextInt();
+
+        for (int x = 1;x <= kere;x++){
+            total *= sayi;
+        }
+        System.out.println("Sayiniz " + total);
+    }
+}
