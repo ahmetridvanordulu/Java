@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double armut,a = 2.14,a1,elma,e = 3.67,e1,domates,d = 1.11,d2,muz,m = 0.95,m2,pat,p = 5.00,p2;
+
+        System.out.println("Armut miktari giriniz ");
+        Scanner n1 = new Scanner(System.in);
+        armut = n1.nextDouble();
+
+        System.out.println("Elma miktari giriniz ");
+        Scanner n2 = new Scanner(System.in);
+        elma = n2.nextDouble();
+
+        System.out.println("Domates miktari giriniz ");
+        Scanner n3 = new Scanner(System.in);
+        domates = n3.nextDouble();
+
+        System.out.println("Muz miktari giriniz ");
+        Scanner n4 = new Scanner(System.in);
+        muz = n4.nextDouble();
+
+        System.out.println("Patlican miktari giriniz ");
+        Scanner n5 = new Scanner(System.in);
+        pat = n5.nextDouble();
+
+        a1 = a * armut;
+        e1 = e * elma;
+        d2 = d * domates;
+        m2 = m * muz;
+        p2 = p * pat;
+        System.out.println("Armut tutari toplam :" + e1);
+        System.out.println("Elma tutari toplam : " + e1);
+        System.out.println("Domates tutari toplam : " + d2);
+        System.out.println("Muz tutari toplam :" + m2);
+        System.out.println("Patatesi miktari toplam :" + p2);
+
+
+
+
+    }
+}
