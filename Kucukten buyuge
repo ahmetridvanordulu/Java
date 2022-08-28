@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class sd {
+    public static void main(String[] args) {
+        int ilk,ikinci,ucuncu;
+        Scanner asd = new Scanner(System.in);
+
+        System.out.println("İlk sayiyi giriniz");
+        ilk = asd.nextInt();
+
+        System.out.println("İkinci sayiyi giriniz");
+        ikinci = asd.nextInt();
+
+        System.out.println("ucuncu sayiyi giriniz");
+        ucuncu = asd.nextInt();
+
+        if (ilk < ikinci && ilk < ucuncu){
+            if (ikinci < ucuncu){
+                System.out.println("İlk < ikinci < ucuncu");
+            } else if (ucuncu < ikinci) {
+                System.out.println("İlk < ucuncu < ikinci");
+            }
+
+        } else if (ikinci < ilk && ikinci < ucuncu) {
+            if (ucuncu < ilk){
+                System.out.println("Ikinci < Ucuncu < Ilk");
+            }else {
+                System.out.println("Ikinci < Ilk < Ucuncu");
+            }
+        }else if (ucuncu <ikinci && ucuncu < ilk){
+            if (ikinci < ilk){
+                System.out.println("ucuncu < ikinci < ilk");
+            }else {
+                System.out.println("ucuncu < ilk < ikinci");
+            }
+        }
+
+    }
+}
