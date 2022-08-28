@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.SortedMap;
+
+public class Main {
+    public static void main(String[] args) {
+        double boy,index;
+        int kilo;
+
+        Scanner Veri1 = new Scanner(System.in);
+        System.out.println("Boy gir (Metre cinsinden) ! ");
+        boy = Veri1.nextDouble();
+
+
+        Scanner Veri3 = new Scanner(System.in);
+        System.out.println("Kilo gir ! ");
+        kilo = Veri3.nextInt();
+
+        index = kilo/(boy*boy);
+        System.out.println("Vucut kitle endeksiniz " + index);
+    }
+}
