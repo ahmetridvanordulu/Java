@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class h {
+    public static void main(String[] args) {
+        Scanner klavye = new Scanner(System.in);
+        System.out.println("Bir Sayı Giriniz :");
+        int n = klavye.nextInt();
+
+        for (int i = 1; i <= n ; i++) {
+                for (int x = 1; x <= (n-i); x++){
+                    System.out.print(" ");
+                }
+                for (int z = 1; z <=(2*i) - 1; z++){
+                    System.out.print("*");
+                }
+            System.out.println();
+        }
+    }}
