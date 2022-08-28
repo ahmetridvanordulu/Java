@@ -1,0 +1,93 @@
+import java.util.Scanner;
+
+public class hi {
+    static int toplama(int a,int b){
+        int toplam = a + b;
+        System.out.println("X ve Y'nin toplami " + toplam);
+        return toplam;
+    }
+    static int cikarma(int q,int w){
+        int cikarilmis = q-w;
+        System.out.println("Cikarma islemi sonucu = " + cikarilmis);
+        return cikarilmis;
+    }
+    static int carpma(int k,int l){
+        int carpim = k*l;
+        System.out.println("Carpim sonucu = " + carpim);
+        return carpim;
+    }
+
+    static int bölme(int z,int s){
+        int bölüm = z/s;
+        System.out.println("Bolum sonucu = " + bölüm);
+        return bölüm;
+    }
+    static int üsalma(int v,int b){
+        int üslem = 1;
+        for (int i =1; i <= b;i++){
+            üslem *= v;
+        }
+        return üslem;
+    }
+
+    static int mod(int g,int h){
+        int modum = g%h;
+        return modum;
+    }
+
+    static void dik(int l,int ş){
+        System.out.println("Cevresi = " + (2*(l+ş)) + "Alani" + (l*ş));
+    }
+    public static void main(String[] args) {
+        Scanner cek = new Scanner(System.in);
+        int secimler;
+
+        String secenekler = "1 = Toplama islemi\n"
+                + "2 = Cikarma Islemi\n"
+                + "3 = Carpma islemi\n"
+                + "4 = Bolme islemi\n"
+                + "5 = Us alma\n"
+                + "6 = Mod alma\n"
+                + "7 = Dikdortgen alan ve cevre hesaplama\n"
+                + "0 = Cikis";
+
+        while (true){
+            System.out.println(secenekler);
+            System.out.print("Seciminizi yapiniz ");
+            secimler = cek.nextInt();
+            if (secimler == 0){
+                break;
+            }
+            System.out.println("X degerini giriniz => ");
+            int x = cek.nextInt();
+            System.out.println("Y degerini giriniz => ");
+            int y = cek.nextInt();
+
+            switch (secimler) {
+                case 1:
+                    toplama(x, y);
+                    break;
+                case 2:
+                    cikarma(x,y);
+                    break;
+                case 3:
+                    carpma(x,y);
+                    break;
+                case 4:
+                    bölme(x,y);
+                    break;
+                case 5:
+                    System.out.println("Us alma sonucu = " + üsalma(x,y));
+                    break;
+                case 6:
+                    System.out.println("Mod alma sonucu " + mod(x,y));
+                    break;
+                case 7:
+                    dik(x,y);
+                    break;
+
+            }
+        }
+        System.out.println("Bye ('-')");
+    }
+}
