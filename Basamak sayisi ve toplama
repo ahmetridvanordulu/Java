@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class h {
+    public static void main(String[] args) {
+    Scanner çek = new Scanner(System.in);
+    int girilensayi,toplam = 0,kere = 0;
+
+    System.out.println("Basamaklarinin toplanmasini istediginiz degerleri giriniz ");
+    girilensayi = çek.nextInt();
+    while (girilensayi != 0){
+        toplam += (girilensayi % 10);
+        girilensayi /= 10;
+        kere++;
+    }
+        System.out.println("Basamaklarin toplami " + toplam);
+        System.out.println("Basamak sayisi " + kere);
+    }}
