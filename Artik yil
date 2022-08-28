@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class h {
+    public static void main(String[] args) {
+        int x;
+        Scanner Gir = new Scanner(System.in);
+
+        System.out.println("Yil giriniz ");
+        x = Gir.nextInt();
+
+        if (x%4==0){
+            System.out.println(x + " Artik yildir");
+        }else {
+            System.out.println(x + " Artik Degildir");
+        }
+
+}}
