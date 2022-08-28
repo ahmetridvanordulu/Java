@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class h {
+    public static void main(String[] args) {
+        int q,toplam = 0;
+        Scanner gir = new Scanner(System.in);
+
+        do {
+            System.out.println("Sayiyi giriniz ");
+            q = gir.nextInt();
+            if (q % 2 == 0 && q % 4 == 0){
+                toplam += q;
+            }
+        }while (q % 2 == 0);
+
+        System.out.println("Toplami " + toplam);
+    }
+}
