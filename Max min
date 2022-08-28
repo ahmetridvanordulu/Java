@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class h {
+    public static void main(String[] args) {
+        int büyük = 0,kücük =0;
+        Scanner al = new Scanner(System.in);
+        System.out.println("Sayi adedini yaziniz : ");
+        int sayac = al.nextInt();
+
+        for (int i = 1;i <= sayac; i++){
+            System.out.println("Lütfen " + i + ".Sayiyi giriniz");
+            int girilensayi = al.nextInt();
+            if (sayac == 1){
+                büyük = girilensayi;
+                kücük = girilensayi;
+            }else {
+                if (girilensayi > büyük){
+                    büyük = girilensayi;
+                } else if (girilensayi < kücük) {
+                    kücük = girilensayi;
+                }
+            }
+        }
+        System.out.println("Max " + büyük);
+        System.out.println("Min " + kücük);
+    }
+    }
