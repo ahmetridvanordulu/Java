@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double r,a,pi = 3.14,DaireAlani;
+
+        Scanner gir1 = new Scanner(System.in);
+        System.out.println("Yaricapi Giriniz");
+        r = gir1.nextDouble();
+
+        Scanner gir2 = new Scanner(System.in);
+        System.out.println("Merkez Aci Giriniz");
+        a = gir2.nextDouble();
+
+        DaireAlani = ((pi*(r*r)*a)/360);
+        System.out.println("Dairenin Alani " + DaireAlani);
+
+    }
+}
