@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int n1,n2,sec;
+
+        Scanner giris = new Scanner(System.in);
+
+        System.out.println("Ilk sayiyi giriniz..");
+        n1 = giris.nextInt();
+
+        System.out.println("Ikinci sayiyi giriniz..");
+        n2 = giris.nextInt();
+
+        System.out.println("1 - Toplam\n 2 - Cikarma\n 3 - Carpma\n 4 - Bolme ");
+        System.out.println("Seciminiz ?");
+        sec = giris.nextInt();
+
+
+        switch (sec){
+            case 1:
+                System.out.println(n1 + n2);
+                break;
+            case 2:
+                System.out.println(n1 - n2);
+                break;
+            case 3:
+                System.out.println(n1 * n2);
+                break;
+            case 4:
+                if (n1 == 0 || n2 == 0){
+                    System.out.println("Iki sayidan birisi sifir !!!!!!");
+                    break;
+                }else{
+                    System.out.println(n1 / n2);
+                }
+        }
+    }
+}
