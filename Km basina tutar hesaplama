@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int KM;
+        double perKM = 2.20,total;
+
+        Scanner gel = new Scanner(System.in);
+        System.out.println("Mesafe gir ");
+        KM = gel.nextInt();
+
+        total = KM * perKM;
+        total += 10;
+        total = (total < 20) ? 20 : total;
+        System.out.println(total);
+
+
+    }
+}
