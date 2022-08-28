@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Değişkenlerin oluşumu
+
+        int mat, fiz, kimya, turkce, tarih, muzik;
+
+        // Girisi tanımladık
+        Scanner giris = new Scanner(System.in);
+
+        // Kullanıcıdan girisleri alıyorum
+        System.out.println("Matematik notunu gir = ");
+        mat = giris.nextInt();
+
+
+        System.out.println("Fizik notunu gir = ");
+        fiz = giris.nextInt();
+
+
+        System.out.println("Kimya notunu gir = ");
+        kimya = giris.nextInt();
+
+
+        System.out.println("Turkce notunu gir = ");
+        turkce = giris.nextInt();
+
+
+        System.out.println("Tarih notunu gir = ");
+        tarih = giris.nextInt();
+
+
+        System.out.println("Muzik notunu gir = ");
+        muzik = giris.nextInt();
+
+
+        double toplamlari = (mat + fiz + kimya + turkce + tarih + muzik);
+        double ortalama = toplamlari/6;
+        System.out.print("Ortalamaniz " + ortalama);
+
+        String x = ortalama >= 60 ? " Tebrikler" : " Kaldin !";
+        System.out.println(x);
+    }
+
+}
+
