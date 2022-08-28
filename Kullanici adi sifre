@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        String Ad,Password,yeniSifre;
+        int evetHayir;
+
+        Scanner gir = new Scanner(System.in);
+
+        System.out.println("Ad nedir");
+        Ad = gir.nextLine();
+
+        System.out.println("Şifreniz nedir ?");
+        Password = gir.nextLine();
+
+        if (Ad.equals("Ahmet") && (Password.equals("123456789"))){
+            System.out.println("Giris basarili");
+        }
+        else {
+            System.out.println("Hatali giris, yeni sifre ister misiniz (1 Evet 2 Hayır)?");
+            evetHayir = gir.nextInt();
+
+            if (evetHayir == 1){
+                System.out.println("Yeni sifre giriniz");
+                yeniSifre = gir.nextLine();
+                if (yeniSifre.equals(Password))
+                    System.out.println("dene");
+
+
+            }
+
+        }
+
+    }
+}
