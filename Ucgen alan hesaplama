@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        double a,b,c,cevre,alan,u;
+        Scanner giris = new Scanner(System.in);
+        System.out.println("Ucgenin a'sini giriniz");
+        a = giris.nextDouble();
+
+        Scanner giris1 =new Scanner(System.in);
+        System.out.println("Ucgenin b'sini giriniz");
+        b = giris1.nextDouble();
+
+        Scanner giris2 =new Scanner(System.in);
+        System.out.println("Ucgenin c'sini giriniz");
+        c = giris2.nextDouble();
+        u = ((a + b + c)/2);
+        cevre = (2 * u);
+        alan = Math.sqrt(u * (u-a) * (u-b) * (u-c));
+        System.out.println("Cevre " + cevre);
+        System.out.println("Alan" + alan);
+
+    }
+}
