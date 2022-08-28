@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class h {
+    public static void main(String[] args) {
+        Scanner giris = new Scanner(System.in);
+        int n;
+        double i,toplam = 0.0;
+        System.out.print("N Sayisini giriniz ");
+        n = giris.nextInt();
+
+        for (i = 1; i <= n; i++){
+            toplam += (1/i);
+        }
+        System.out.println(toplam);
+    }
+    }
