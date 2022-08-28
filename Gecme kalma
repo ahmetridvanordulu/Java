@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class sd {
+    public static void main(String[] args) {
+        double matematik, fizik, turkce, kimya, muzik;
+        Scanner gir = new Scanner(System.in);
+
+        System.out.println("Matematik notunuzu giriniz");
+        matematik = gir.nextDouble();
+
+        System.out.println("Fizik notunuzu giriniz");
+        fizik = gir.nextDouble();
+
+        System.out.println("Turkce notunuzu giriniz");
+        turkce = gir.nextDouble();
+
+        System.out.println("Kimya notunuzu giriniz");
+        kimya = gir.nextDouble();
+
+        System.out.println("Muzik notunuzu giriniz");
+        muzik = gir.nextDouble();
+
+        double ort = ((matematik + fizik + turkce + kimya + muzik)/5);
+        if (ort >= 55 && ort < 100 && ort > 0){
+            System.out.println("Tebrikler gectiniz !!!");
+        }else {
+            System.out.println("Ya kaldınız yada 0 veya yüz arasında deger girmediniz");
+        }
+
+        
+    }
+}
