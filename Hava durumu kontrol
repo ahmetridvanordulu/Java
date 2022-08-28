@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class sd {
+    public static void main(String[] args) {
+     int sicaklik;
+
+     Scanner gir = new Scanner(System.in);
+     System.out.println("Sicaklik giriniz");
+     sicaklik = gir.nextInt();
+
+    boolean ct1 = (sicaklik < 5);
+    boolean ct2 = (sicaklik > 5 && sicaklik < 15 );
+    boolean ct3 = (sicaklik > 10 && sicaklik < 25);
+    boolean ct4 = (sicaklik > 25);
+
+    String bir = ct1 ? "Kayak" : "XX";
+    String bir2 = ct2 ? "Sinema" : "XX";
+    String bir3 = ct3 ? "Piknik" : "XX";
+    String bir4 = ct4 ? "Yüzme" : "XX";
+
+        System.out.println(bir);
+        System.out.println(bir2);
+        System.out.println(bir3);
+        System.out.println(bir4);
+    }
+}
