@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class hi {
+
+    public static void main(String[] args) {
+        int x,y,sonuc = 1;
+        Scanner al = new Scanner(System.in);
+        System.out.println("x degerini giriniz ");
+        x = al.nextInt();
+        System.out.println("y degerini giriniz ");
+        y = al.nextInt();
+
+
+
+
+        for (int i = 1;i<=y;i++){
+            sonuc *=x;
+        }
+        System.out.println(sonuc);
+
+
+    }
+}
