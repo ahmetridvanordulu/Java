@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class h {
+    public static void main(String[] args) {
+        int sinir;
+        Scanner giris = new Scanner(System.in);
+        System.out.println("Sinir sayisini yaziniz");
+        sinir = giris.nextInt();
+
+        for (int i = 1; i <= sinir; i*=4){
+            System.out.println(i);
+        }
+        System.out.println("5****5");
+        for (int z = 1; z <= sinir; z*=5){
+            System.out.println(z);
+        }
+    }
+}
