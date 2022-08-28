@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class h {
+    public static void main(String[] args) {
+        int sayi, sayiAdedi = 0, toplam = 0, ortalama, i;
+
+        Scanner deger = new Scanner(System.in);
+        System.out.print("Sayi Belirleyiniz : ");
+        sayi = deger.nextInt();
+
+
+        for (i = 1; i <= sayi; i++) {
+            if ((i % 3 == 0) && (i % 4 == 0)) {
+                toplam += i;
+                sayiAdedi++;
+            }
+        }
+        ortalama = toplam / sayiAdedi;
+        System.out.println("3'e ve 4'e tam bolunebilen sayilarin ortalamasi : " + ortalama);
+    }
+}
