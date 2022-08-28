@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class h {
+    public static void main(String[] args) {
+        Scanner gelsin = new Scanner(System.in);
+        String isim,sifre;
+        int hak = 3,bakiye = 2000,yatir,cek;
+
+        System.out.print("Isminizi giriniz : ");
+        isim = gelsin.nextLine();
+
+        System.out.println("Sifrenizi giriniz : ");
+        sifre = gelsin.nextLine();
+
+        if (isim.equals("ahmet") && sifre.equals("123")){
+            System.out.println("Heisenberg bankasina hosgeldiniz");
+            System.out.println("1 = Para yatir\n" + "2 = Para cek\n" + "3 = Bakiyeyi ogren\n" + "4 = Cikis yap\n");
+            hak = gelsin.nextInt();
+            switch (hak){
+                case 1:
+                    System.out.print("Yatiralacak parayi giriniz : ");
+                    yatir = gelsin.nextInt();
+                    bakiye += yatir;
+                    System.out.println("Bakiyeniz" + bakiye);
+                    break;
+                case 2:
+                    System.out.println("Cikarilacak parayi giriniz : ");
+                    cek = gelsin.nextInt();
+                    if (cek > bakiye){
+                        System.out.println("Cekilecek miktar bakiyenin üzerindedir !");
+                        break;
+                    }else {
+                        bakiye -= cek;
+                        System.out.println("Bakiyeniz" + bakiye);
+                        break;
+                    }
+                case 3:
+                    System.out.println("Bakiyeniz " + bakiye);
+                    break;
+                case 4:
+                    System.out.println("iyi günler");
+                    break;
+            }
+
+        }else {
+            hak --;
+            System.out.println("Hatali giris yaptiniz ");
+            if (hak == 0){
+                System.out.println("3 Kez hatalı giristen dolayi bloke edildi.");
+            }
+        }
+    }}
