@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class h {
+    public static void main(String[] args) {
+        Scanner al = new Scanner(System.in);
+        System.out.println("Sayiyi giriniz");
+        int sayi = al.nextInt();
+        int gelgel = 1;
+
+        for (int i = 1; i < sayi; i++) {
+
+            if (sayi % i == 0) {
+                gelgel += i;
+            }
+
+        }if (gelgel == sayi) {
+            System.out.println(sayi + " Mükemmel sayidir");
+        } else {
+            System.out.println(sayi + " Mükemmel sayi değildir");
+        }
+    }
+    }
