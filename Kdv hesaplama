@@ -1,0 +1,18 @@
+import javax.imageio.plugins.tiff.TIFFDirectory;
+import java.lang.reflect.Type;
+import java.util.Scanner;
+import java.util.SortedMap;
+
+public class Main {
+    public static void main(String[] args) {
+    double Tutar,KDV = 0.18;
+    Scanner al = new Scanner(System.in);
+    System.out.println("Tutar gir");
+    Tutar = al.nextDouble();
+    double KDVTUTAR = Tutar * KDV;
+    double KDVLİTUTAR = Tutar + KDVTUTAR;
+        System.out.println(KDVLİTUTAR);
+    }
+
+}
+
