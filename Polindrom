@@ -1,0 +1,18 @@
+public class hi {
+static boolean palindrommu(int sayi){
+    int degisken = sayi,terssayi = 0,son;
+    while (degisken != 0){
+        son = degisken%10;
+        terssayi = (terssayi * 10) + son;
+        degisken /= 10;
+    }
+
+    if (degisken == terssayi)
+        return true;
+    else
+        return false;
+}
+    public static void main(String[] args) {
+        System.out.println(palindrommu(9881));
+    }
+}
