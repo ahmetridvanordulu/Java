@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class hi {
+    public static void main(String[] args) {
+       Scanner al = new Scanner(System.in);
+        System.out.println("Sayiyi giriniz");
+        int sayi = al.nextInt();
+
+        boolean denetleme = false;
+
+        for (int i = 2;i < sayi;i++){
+            if (sayi % i == 0){
+                denetleme =false;
+                break;
+            }else {
+                denetleme =true;
+                break;
+            }
+        }
+        if (denetleme){
+            System.out.println(sayi + " Asaldir");
+        }else {
+            System.out.println(sayi + " Asal degildir");
+        }
+    }
+}
+
+
+
