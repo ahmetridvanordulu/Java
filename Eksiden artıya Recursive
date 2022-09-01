@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class hi {
+    static void eksiyeartiye(int m) {
+        if (m > 0){
+            System.out.println(m + " ");
+            eksiyeartiye(m-5);
+        }System.out.print(m +" ");
+    }
+
+    public static void main(String[] args) {
+        Scanner al = new Scanner(System.in);
+        System.out.print("N Giriniz : ");
+        int x = al.nextInt();
+        System.out.print("Çikti : ");
+        eksiyeartiye(x);
+        System.out.println();
+        
+    }
+    }
+
+
+
+
