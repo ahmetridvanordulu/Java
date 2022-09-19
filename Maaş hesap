@@ -1,0 +1,72 @@
+public class App {
+    public static void main(String[] args) throws Exception {
+        Maas m = new Maas("Ahmet veren", 2000, 45, 2002);
+        m.info();
+        Maas n = new Maas("Yavuz Sisko", 600, 80, 1975);
+        n.info();
+    }
+}
+
+class Maas {
+    String name;
+    double salary;
+    int workHours;
+    int hireYear;
+
+    Maas(String name, double salary, int workHours, int hireYear) {
+        this.name = name;
+        this.salary = salary;
+        this.hireYear = hireYear;
+        this.workHours = workHours;
+    }
+
+    double tax() {
+        double vergi;
+        if (salary > 1000) {
+            vergi = salary * 0.03;
+
+        } else {
+            vergi = 0;
+        }
+        return vergi;
+    }
+
+    double bonus() {
+        double bonus;
+        if (workHours > 40) {
+            bonus = (workHours - 40) * 30;
+        } else {
+            bonus = 0;
+        }
+        return bonus;
+
+    }
+
+    double raiseSalary() {
+        double artısMiktari = 0;
+        double kacYil = 2022 - hireYear;
+        if (kacYil < 10) {
+            artısMiktari = salary * 0.05;
+        }
+        if (kacYil >= 10 && kacYil < 20) {
+            artısMiktari = salary * 0.10;
+        }
+        if (kacYil >= 20) {
+            artısMiktari = salary * 0.15;
+        }
+        return artısMiktari;
+    }
+
+    void info() {
+        double toplam = salary - tax() + bonus() + raiseSalary();
+        System.out.println("------------------------------------");
+        System.out.println("İsim Soyisim: " + this.name);
+        System.out.println("Hangi Yil Başladi: " + this.hireYear);
+        System.out.println("Haftada kaç ssat calisiyor: " + this.workHours);
+        System.out.println("vergisiz bonussuz maasi: " + this.salary);
+        System.out.println("vergi: " + tax());
+        System.out.println("bonus: " + bonus());
+        System.out.println("Artis Miktari: " + raiseSalary());
+        System.out.println("Toplam Maas: " + toplam);
+    }
+}
