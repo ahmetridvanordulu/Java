@@ -2,7 +2,7 @@ public class main {
     public static void main(String[] args) {
         Fighter marc = new Fighter("Ahmet" , 13 , 100, 90, 50);
         Fighter alex = new Fighter("Tarkan" , 11 , 95, 100, 50);
-        Ring r = new Ring(marc,alex , 90 , 100);
+        Ring r = new Ring(Ahmet,Tarkan , 90 , 100);
         r.run();
     }
 }
